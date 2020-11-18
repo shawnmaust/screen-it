@@ -1,0 +1,80 @@
+form {
+  padding: 2.5rem;
+}
+
+label {
+  font-weight: 600;
+  padding-right: 1rem;
+  width: 8rem;
+  font-size: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 0.875rem;
+}
+
+select,
+input[type="text"] {
+  appearance: none;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  height: 4.5rem;
+  padding: 1rem 1.375rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #aaa;
+}
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+select { 
+  background: url(../images/caret.svg) calc(100% - 1rem) 50% / 1rem no-repeat;
+}
+
+.rater input {
+  appearance: none;
+  height: 2rem;
+  width: 2rem;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: url(../images/star.png) 50% 50% / 100% no-repeat;
+}
+
+.rater input:checked,
+.rater input.filled {
+  background-image: url(../images/star-filled.png); 
+}
+
+button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  padding: 1.375rem;
+  margin-top: 1.375rem;
+  width: 100%;
+  border: 1px solid #61a0ff;
+  border-radius: 8px;
+  background: #94bfff linear-gradient(#94bfff, #61a0ff);
+  box-shadow: 0 2px 4px 0 rgba(97, 160, 255, 0.5),
+    0 4px 8px 0 rgba(97, 160, 255, 0.25);
+}
+
+@media (min-width: 40rem) {
+  .input-group {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+  }
+  select,
+  input[type="text"] {
+    margin-top: 0;
+    width: calc(100% - 8rem);
+  }
+  button {
+    margin-top: 0;
+  }
+}
